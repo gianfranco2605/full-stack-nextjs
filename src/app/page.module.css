@@ -4,6 +4,12 @@
   gap: 100px;
 }
 
+@media (max-width: 768px) {
+  .container {
+    flex-direction: reverse;
+  }
+}
+
 .item {
   flex: 1;
   display: flex;
@@ -25,7 +31,7 @@
 
 .image {
   width: 100%;
-  height: 500px;
+  height: 100%;
   object-fit: contain;
   animation: move 3s infinite ease alternate;
 }

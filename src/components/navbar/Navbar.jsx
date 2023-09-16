@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import styles from './navbar.module.css';
+import DarkModeToogle from '../DarkModeToggle/DarkModelToogle.jsx'
 
 // Links Nav
 const links = [
@@ -42,6 +43,7 @@ return (
     <div className={styles.container}>
         <Link href={'/'} className={styles.logo}>Digital Navas</Link>
         <div className={styles.links}>
+            <DarkModeToogle />
             {links.map((link) => (
                 <Link key={link.id} className={styles.link} href={link.url}>{link.title}</Link>
             ))}
