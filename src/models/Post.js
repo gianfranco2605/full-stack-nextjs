@@ -27,4 +27,4 @@ const postSchema = new Schema({
 { timestamp: true });
 
 
-export default mongoose.model("User", postSchema);
+export default mongoose.model("Post", postSchema);
